@@ -1,5 +1,5 @@
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import HeroExplore from "../Explore/HeroExplore";
 import AekSecBlog from "../Explore/AekSecBlog";
 import AekSecNewSlider from "../Explore/AekSecNewSlider";

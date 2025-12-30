@@ -1,6 +1,6 @@
 import { Mail, Phone, Globe, Shield, Users, Briefcase } from "lucide-react";
-import Navbar  from "../Components/Navbar";
-import Footer from "../Components/Footer";
+import Navbar  from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function About() {
 
