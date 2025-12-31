@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export default function CiscoAIBlogsCTA() {
+    const navigate = useNavigate();
+
   return (
     <section className="bg-gradient-to-r from-[#07182d] via-[#07182d] to-[#0b2447] py-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -20,6 +24,7 @@ export default function CiscoAIBlogsCTA() {
             </p>
 
             <button
+              onClick={() => navigate("/blog")}
               className="
                 mt-8
                 inline-flex items-center

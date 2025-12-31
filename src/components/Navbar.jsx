@@ -3,6 +3,7 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import { useState } from "react";
 import MegaMenu from "../MegaMenu/MegaMenu";
 import { useNavigate } from "react-router-dom";
+import { ShieldCheck } from "lucide-react";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -12,14 +13,16 @@ export default function Navbar() {
 
   return (
     <div className="relative">
-      <nav className="flex items-center justify-between px-10 py-4 bg-white relative z-50">
+      <nav className="flex items-center justify-between px-10 py-4 bg-gray-50 relative z-50">
         {/* LEFT */}
         <div className="flex items-center gap-10">
           <h1
             onClick={() => (window.location.href = "/")}
-            className="text-2xl font-bold text-blue-600 cursor-pointer"
+            className="cursor-pointer text-2xl font-extrabold tracking-tight
+             bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600
+             bg-clip-text text-transparent hover:opacity-90 transition"
           >
-            AekSec
+            Aek<span className="font-light">Sec</span>
           </h1>
 
           {/* DESKTOP MENU */}
@@ -64,20 +67,21 @@ export default function Navbar() {
 
         {/* RIGHT */}
         <div className="hidden max-[960px]:hidden md:flex items-center gap-3">
-          <button className="px-5 py-2 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
+          <button onClick={()=>navigate('/trial-demos')} className="px-5 py-2 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
             Trials & demos
           </button>
 
-          <button  className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-gray-100">
+          <button className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-gray-100">
             <Search className="w-5 h-5 text-gray-700" />
           </button>
 
-          <button   onClick={() => navigate("/login")}
-          className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100">
+          <button
+            onClick={() => navigate("/login")}
+            className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100"
+          >
             <MdOutlineAccountCircle className="w-6 h-6" />
             <span>Log In</span>
           </button>
-
         </div>
 
         {/* MOBILE MENU BUTTON */}
@@ -117,7 +121,6 @@ export default function Navbar() {
               <MdOutlineAccountCircle className="w-6 h-6" />
               <span>Log In</span>
             </li>
-
           </ul>
         </div>
       )}

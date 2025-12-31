@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
+import { FiChevronRight } from "react-icons/fi";
+
 export default function ImageTextSection() {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 px-10 bg-gray-100">
       <div className="max-w-7xl mx-auto">
-
         {/* ===== Heading ===== */}
         <h2 className="text-4xl font-light/200 mb-16 text-black">
           Driving AI innovation
@@ -10,11 +14,10 @@ export default function ImageTextSection() {
 
         {/* ===== Cards Grid ===== */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {/* Card 1 */}
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+              src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/homepage/ai-canvas-demo-800x450.jpg"
               alt="AI Canvas"
               className="w-full h-48 object-cover"
             />
@@ -25,17 +28,24 @@ export default function ImageTextSection() {
               </h3>
 
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                Watch how AI Canvas brings real-time telemetry, AI insights,
-                and team collaboration into a single shared workspace.
+                Watch how AI Canvas brings real-time telemetry, AI insights, and
+                team collaboration into a single shared workspace.
               </p>
 
               <div className="flex flex-col gap-3">
-                <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
-                  Watch AI Canvas demo →
-                </a>
-                <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
-                  Learn about our agentic AI approach →
-                </a>
+                <button
+                  onClick={() => navigate("/AekSec-canvas")}
+                  className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer"
+                >
+                  Watch AI Canvas demo <FiChevronRight />
+                </button>
+
+                <button
+                  onClick={() => navigate("/AiCanvaslearning-inside")}
+                  className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer"
+                >
+                  Learn about our AI approach <FiChevronRight />
+                </button>
               </div>
             </div>
           </div>
@@ -43,15 +53,13 @@ export default function ImageTextSection() {
           {/* Card 2 */}
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+              src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/homepage/ai-defense-ui-800x450.jpg"
               alt="AI Defense"
               className="w-full h-48 object-cover"
             />
 
             <div className="p-6">
-              <h3 className="text-lg font-semibold mb-4">
-                AekSec AI Defense
-              </h3>
+              <h3 className="text-lg font-semibold mb-4">AekSec AI Defense</h3>
 
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
                 Secure your organization’s AI development and usage with
@@ -59,12 +67,16 @@ export default function ImageTextSection() {
               </p>
 
               <div className="flex flex-col gap-3">
-                <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
-                  Learn about AI Defense →
-                </a>
-                <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
-                  Request a demo →
-                </a>
+                <button
+                  onClick={() => navigate("/products/ai-defense")}
+                  className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer"
+                >
+                  Learn about AI Defense <FiChevronRight />
+                </button>
+
+                <button className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer">
+                  Request a demo <FiChevronRight />
+                </button>
               </div>
             </div>
           </div>
@@ -72,7 +84,7 @@ export default function ImageTextSection() {
           {/* Card 3 */}
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3"
+              src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/homepage/cisco-nvidia-800x450.jpg"
               alt="Secure AI Factory"
               className="w-full h-48 object-cover"
             />
@@ -88,12 +100,19 @@ export default function ImageTextSection() {
               </p>
 
               <div className="flex flex-col gap-3">
-                <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
-                  Explore Secure AI Factory →
-                </a>
-                <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
-                  Learn about AI infrastructure →
-                </a>
+                <button
+                  onClick={() => navigate("/AekSec-SecureAiFactory")}
+                  className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer"
+                >
+                  Explore Secure AI Factory <FiChevronRight />
+                </button>
+
+                <button
+                  onClick={() => navigate("/SecureAi-inside")}
+                  className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer"
+                >
+                  Learn about AI infrastructure <FiChevronRight />
+                </button>
               </div>
             </div>
           </div>
@@ -101,7 +120,7 @@ export default function ImageTextSection() {
           {/* Card 4 */}
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1581090700227-1e37b190418e"
+              src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/homepage/mass-scale-ai-800x450.jpg"
               alt="AI Infrastructure"
               className="w-full h-48 object-cover"
             />
@@ -117,29 +136,40 @@ export default function ImageTextSection() {
               </p>
 
               <div className="flex flex-col gap-3">
-                <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
-                  Explore advanced AI portfolio →
-                </a>
-                <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
-                  Learn about AekSec Silicon One →
-                </a>
+                <button
+                  onClick={() => navigate("/AekSec-infrastructure")}
+                  className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer"
+                >
+                  Explore advanced AI portfolio <FiChevronRight />
+                </button>
+
+                <button
+                  onClick={() => navigate("/AekSec-infrastructure")}
+                  className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer"
+                >
+                  Learn about AekSec Silicon One <FiChevronRight />
+                </button>
               </div>
             </div>
           </div>
-
         </div>
 
         {/* ===== Bottom CTAs ===== */}
         <div className="mt-16 flex items-center justify-center gap-8">
-          <button className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
+          <button
+            onClick={() => navigate("/Exploremoreai-news")}
+            className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
+          >
             Explore more AI news
           </button>
 
-          <a className="text-blue-600 font-medium hover:underline">
-            Why AekSec for the AI era →
-          </a>
+          <button
+            onClick={() => navigate("/why/whyAekSec")}
+            className="flex items-center gap-1 text-blue-600 font-medium hover:underline"
+          >
+            Why AekSec for the AI era <FiChevronRight />
+          </button>
         </div>
-
       </div>
     </section>
   );

@@ -1,4 +1,8 @@
+import  {useNavigate}  from "react-router-dom";
+
 export default function InsideAekSec() {
+  const navigate = useNavigate();
+
   return (
     <section className="px-10 py-20 bg-white">
       <div className="max-w-6xl mx-auto">
@@ -26,9 +30,9 @@ export default function InsideAekSec() {
               and why proactive risk management is now a strategic priority.
             </p>
 
-            <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
+            <button className="text-blue-600 text-sm font-medium hover:underline cursor-pointer" onClick={() => navigate('/report/AiReadiness-report')}>
               Get the report →
-            </a>
+            </button>
           </div>
 
           {/* Column 2 */}
@@ -46,9 +50,9 @@ export default function InsideAekSec() {
               across global enterprises.
             </p>
 
-            <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
+            <button className="text-blue-600 text-sm font-medium hover:underline cursor-pointer" onClick={() => navigate('/report/StateofSecurity-report')}>
               Read the report →
-            </a>
+            </button>
           </div>
 
           {/* Column 3 */}
@@ -66,9 +70,9 @@ export default function InsideAekSec() {
               infrastructure while enabling innovation at scale.
             </p>
 
-            <a className="text-blue-600 text-sm font-medium hover:underline cursor-pointer">
+            <button className="text-blue-600 text-sm font-medium hover:underline cursor-pointer" onClick={() => navigate('/report/SecuringAi-report')}>
               Get the AekSec InfoBrief →
-            </a>
+            </button>
           </div>
 
         </div>

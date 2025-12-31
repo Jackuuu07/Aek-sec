@@ -3,6 +3,7 @@ import HyperSonic from "../assets/hyp_1.jpg";
 import { Link } from "react-router-dom";
 
 export default function LatestProducts() {
+  
   return (
     <section className="px-10 py-16 bg-white">
       <h1 className="text-5xl text-center mb-14 font-light">
@@ -44,7 +45,7 @@ export default function LatestProducts() {
               </Link>
 
               <Link
-                to="/products/ai-platform/details"
+                to="/products/ai-platform"
                 className="text-gray-500 text-sm hover:text-gray-700 transition"
               >
                 View product details
@@ -83,7 +84,7 @@ export default function LatestProducts() {
               </Link>
 
               <Link
-                to="/solutions/ai-defense"
+                to="/products/ai-defense"
                 className="text-gray-500 text-sm hover:text-gray-700 transition"
               >
                 Read solution overview
@@ -122,7 +123,7 @@ export default function LatestProducts() {
               </Link>
 
               <Link
-                to="/architecture/hyperfabric"
+                to="/products/hyperfabric"
                 className="text-gray-500 text-sm hover:text-gray-700 transition"
               >
                 See architecture
