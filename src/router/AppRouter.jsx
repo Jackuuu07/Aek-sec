@@ -39,6 +39,7 @@ import ExploreMoreAINews from "../DrivingAiInovation/ExploreMoreNews";
 import AiCanvasPopUp from "../DrivingAiInovation/PopUp Pages/AiCanvasPopUp";
 import SecureAiPopUp from "../DrivingAiInovation/PopUp Pages/SecureAiPopUp";
 import TrialsAndDemos from "../Pages/TrialAndDemos";
+import BusinessCollaboration from "../BrowsByTechnology/Collaboration";
 
 export default function AppRouter() {
   return (
@@ -103,7 +104,10 @@ export default function AppRouter() {
 
       <Route path="/SecureAi-inside" element={<SecureAiPopUp />} /> 
 
-      <Route path="/trial-demos" element={<TrialsAndDemos />} /> 
+      <Route path="/trial-demos" element={<TrialsAndDemos />} />
+
+      <Route path="/collaboration" element={<BusinessCollaboration />} /> 
+ 
 
     </Routes>
     </RefreshRedirect>
