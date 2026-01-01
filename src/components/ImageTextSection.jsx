@@ -74,7 +74,7 @@ export default function ImageTextSection() {
                   Learn about AI Defense <FiChevronRight />
                 </button>
 
-                <button className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer">
+                <button onClick={() => navigate('report/StateofSecurity-report')}className="flex items-center gap-1 text-blue-600 text-sm font-medium hover:underline cursor-pointer">
                   Request a demo <FiChevronRight />
                 </button>
               </div>

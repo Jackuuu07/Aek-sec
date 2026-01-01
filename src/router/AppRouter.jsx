@@ -40,6 +40,8 @@ import AiCanvasPopUp from "../DrivingAiInovation/PopUp Pages/AiCanvasPopUp";
 import SecureAiPopUp from "../DrivingAiInovation/PopUp Pages/SecureAiPopUp";
 import TrialsAndDemos from "../Pages/TrialAndDemos";
 import BusinessCollaboration from "../BrowsByTechnology/Collaboration";
+import Networking from "../BrowsByTechnology/NetWorking";
+import Computing from "../BrowsByTechnology/Computing";
 
 export default function AppRouter() {
   return (
@@ -108,6 +110,9 @@ export default function AppRouter() {
 
       <Route path="/collaboration" element={<BusinessCollaboration />} /> 
  
+      <Route path="/networking" element={<Networking />} /> 
+
+      <Route path="/computing" element={<Computing />} /> 
 
     </Routes>
     </RefreshRedirect>

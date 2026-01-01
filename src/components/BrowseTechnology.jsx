@@ -51,7 +51,7 @@ export default function BrowseTechnology() {
         <TechCard
           icon={Server}
           label="Computing"
-          onClick={() => navigate("/explore")}
+          onClick={() => navigate("/computing")}
         />
         <TechCard icon={Sparkles} label="AI" onClick={() => navigate("/explore")} />
       </div>
