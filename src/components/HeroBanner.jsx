@@ -5,7 +5,12 @@ export default function HeroBanner() {
 
   return (
     <section
-      className="h-[90vh] bg-cover bg-center flex items-center px-20  text-white"
+      className="h-[90vh] bg-cover bg-center flex items-center px-20  text-white     
+      max-sm:h-[95vh]        
+      max-sm:items-start    
+      max-sm:px-6           
+      max-sm:pt-24
+"
       style={{
         backgroundImage:
           "url('https://wallpaperaccess.com/full/1398312.jpg')",
